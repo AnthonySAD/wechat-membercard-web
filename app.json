@@ -13,11 +13,11 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "我的会员卡"
+        "text": "我的卡"
       },
       {
         "pagePath": "pages/logs/logs",
-        "text": "日志"
+        "text": "共享卡"
       }
     ]
   }
