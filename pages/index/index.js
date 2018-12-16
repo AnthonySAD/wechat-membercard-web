@@ -37,7 +37,7 @@ Page({
               success: res => {
                 wx.setStorageSync("token", res.data.data.auth_token)
                 thisPage.getMyCards()
-                wx.hideLoading()
+                wx.hideLoading() 
               }
             })
           }
@@ -52,7 +52,7 @@ Page({
       url: app.globalData.apiUrl + 'card',
       header:app.globalData.header,
       success:res=>{
-        if(!app.checkResult(res)){
+        if (!app.checkResult(res, this.getMyCards)){
           return false
         }
         console.log(res.data.data)

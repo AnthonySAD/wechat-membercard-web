@@ -7,21 +7,15 @@ App({
     userInfo: wx.getStorageSync("userInfo"),
     header: {
       'content-type': 'application/json',
-      'X-AUTH-TOKEN': wx.getStorageSync("token")
+      'X-AUTH-TOKEN': wx.getStorageSync('token'),
     },
   },
   onLaunch: function () {
-
   },
   
-  checkResult: function(res){
+  checkResult: function(res,callback){
     if (res.data.meta.code == 40102){
-      this.login(function(){
-        wx.switchTab({
-          url: 'index',
-        })
-      })
-      
+      this.login(callback)
     }
     return true
   },
@@ -39,6 +33,7 @@ App({
             },
             success: res => {
               wx.setStorageSync("token", res.data.data.auth_token)
+              app.globalData.header['X-AUTH-TOKEN'] = res.data.data.auth_token
               callback()
             }
           })
