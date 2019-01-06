@@ -1,6 +1,19 @@
 <!--index.wxml-->
-<view class="container">
-<view wx:for="{{test}}" class='card'>
-  {{item.name}}:{{item.code}}
+<view class='top-wrapper'>
+  <view class='iconfont icon-search'></view>
+  <input placeholder='搜索卡号/名称' bindinput='searchCard'></input>
+  <view class='add-button' bindtap='addCard'>+</view>
 </view>
+<view hidden='{{searched}}' class='search-message'>
+    没有找到卡片
 </view>
+<scroll-view class='card-wrapper' scroll-y='true' >
+  <view wx:for="{{myCards}}" wx:key='card_id' class='card hideCard' style='background-color:{{item.card_info.color}}' hidden='{{item.hide}}' bindtap='showCard' wx:for-index='index' data-index='{{index}}'>
+      <view class='iconfont card-left {{item.card_info.avatar ? item.card_info.avatar : "icon-membership-card_icon"}}'>{{item.card_info.avatar}}</view>
+      <view class='card-right'>
+        <view class='card-right-name'>{{item.card_info.name}}</view>
+        <view class='card-right-code'>{{item.card_info.code}}</view>
+      </view>
+  </view>
+</scroll-view> 
+

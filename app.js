@@ -1,15 +1,31 @@
-// const App = require('./utils/ald-stat.js').App;
+const App = require('./utils/ald-stat.js').App;
 
 App({
   globalData: {
     userInfo: null,
-    apiUrl: 'http://card.test/api/',
+    apiUrl: 'https://membercard.adshen.top/api/',
     userInfo: wx.getStorageSync("userInfo"),
     header: {
       'content-type': 'application/json',
       'X-AUTH-TOKEN': wx.getStorageSync('token'),
     },
   },
+  shortPath:{
+    index: '/pages/index/index',
+    addCard: '/pages/addCard/addCard',
+    showCard: '/pages/showCard/showCard',
+  },
+
+  goTo: function(path, param){
+    path = this.shortPath[path]
+    if(param){
+      path += '?' + param
+    }
+    wx.navigateTo({
+      url: path,
+    })
+  },
+
   onLaunch: function () {
   },
   

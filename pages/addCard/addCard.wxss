@@ -1,0 +1,54 @@
+/* pages/addCard/addCard.wxss */
+.banner{
+  height: 230rpx;
+  padding-top: 80rpx;
+  margin-bottom: 40rpx;
+  text-align: center;
+}
+.banner text{
+  font-size: 150rpx;
+  color: white;
+}
+
+.card-detail-line{
+  height: 90rpx;
+  padding-top: 15rpx;
+  margin: 0rpx 30rpx;
+}
+
+.card-detail-line input{
+  height: 40px;
+}
+.card-detail-style{
+  margin-top: 10rpx;
+}
+.card-detail-style radio-group{
+  float: right;
+}
+
+.card-detail-style radio{
+  margin-left: 20rpx;
+}
+.card-detail-line-colors{
+  float: left;
+  margin: 40rpx 55rpx 0 0;
+  height: 60rpx;
+  width: 60rpx;
+  border-radius: 50%;
+}
+
+.card-save-button{
+  margin: 130rpx 30rpx;
+}
+
+.input-code{
+  display: inline-block;
+  width: 500rpx;
+}
+
+.scan-button{
+  font-size: 90rpx;
+  width: 100rpx;
+  color: brown;
+  display: inline-block;
+}

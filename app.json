@@ -1,7 +1,9 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/addCard/addCard",
+    "pages/showCard/showCard",
+    "pages/about/about"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -10,14 +12,19 @@
     "navigationBarTextStyle":"black"
   },
   "tabBar": {
+    "selectedColor": "#d81e06",
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "我的卡"
+        "text": "我的卡",
+        "iconPath": "images/tbar-1.png",
+        "selectedIconPath": "images/tbar-tap-1.png"
       },
       {
-        "pagePath": "pages/logs/logs",
-        "text": "共享卡"
+        "pagePath": "pages/about/about",
+        "text": "关于",
+        "iconPath": "images/tbar-2.png",
+        "selectedIconPath": "images/tbar-tap-2.png"
       }
     ]
   }

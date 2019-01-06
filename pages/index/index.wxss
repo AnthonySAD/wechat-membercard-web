@@ -1,30 +1,43 @@
 /**index.wxss**/
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.top-wrapper{
+  margin: 15rpx 40rpx;
+  position: relative;
+}
+.card-wrapper{
+  margin: 20rpx 0;
+  width: 760rpx;
+  height: 950rpx;
+}
+.top-wrapper view{
+  display: inline-block;
+  width: 80rpx;
+}
+.top-wrapper input{
+  display: inline-block;
+  width: 500rpx;
+  border-bottom: 1px solid #444;
+}
+.top-wrapper .add-button{
+  display: inline-block;
+  font-size: 70rpx;
+  width: 70rpx;
+  height: 70rpx;
+  text-align: center;
+  line-height: 70rpx;
+  border: 1px solid #ddd;
+  border-radius: 10rpx;
+  background-color: #eee;
+  color: #444;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.search-message{
+  text-align: center;
 }
 
-.userinfo-nickname {
-  color: #aaa;
-}
 
-.usermotto {
-  margin-top: 200px;
-}
 
-.card{
-  width: 660rpx;
-  height: 130rpx;
-  margin: 30rpx 40rpx;
-  border-radius: 15rpx;
-  background-color: yellow;
-  box-shadow: 3rpx 3rpx 3rpx 3rpx #666;
-}
+
+

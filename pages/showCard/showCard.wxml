@@ -1,0 +1,10 @@
+<view class='banner' style='background-color:{{bgColor}}'>
+  <text class="iconfont icon-membership-card_icon"></text>
+</view>
+<canvas canvas-id='code-image' class="{{type == 1 ? 'qrcode' : 'barcode'}}"></canvas>
+<view class='code'>
+  {{code}}
+</view>
+<view class='info'>
+  {{info}}
+</view>

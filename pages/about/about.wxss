@@ -1,0 +1,18 @@
+/* pages/about/about.wxss */
+.wrapper{
+  margin: 20rpx 30rpx;
+}
+
+.title{
+  text-align: center;
+  font-size: 60rpx;
+  padding-bottom: 40rpx;
+}
+
+.line{
+  margin-top: 20rpx;
+}
+
+.new{
+  margin-left: 40rpx;
+}

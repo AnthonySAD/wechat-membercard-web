@@ -1,0 +1,36 @@
+<!--pages/about/about.wxml-->
+<view class='wrapper'>
+  <view class='title'>
+    会员卡包  V1.0.0
+  </view>
+  <view class='line'>
+    本小程序由个人开发，所以比较简陋。如果有任何建议，请发邮件至：
+  </view>
+  <view class='line'>
+    anthony_we_pro_1@163.com
+  </view>
+  <view class='line'>
+    即将更新以下新功能，敬请期待:
+  </view>
+  <view class='new'>
+    <view class='line'>
+      1. 增加编辑，删除会员卡功能
+    </view>
+    <view class='line'>
+      2. 增加把会员卡分享给好友功能
+    </view>
+    <view class='line'>
+      3. 增加可选的会员卡列表，方便添加会员卡
+    </view>
+    <view class='line'>
+      4. 可以把会员卡共享给所有人
+    </view>
+    <view class='line'>
+      5. 查看共享给所有人的会员卡
+    </view>
+    <view class='line'>
+      6. 美化分享功能
+    </view>
+  </view>
+  
+</view>

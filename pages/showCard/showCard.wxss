@@ -1,0 +1,37 @@
+/* pages/addCard/addCard.wxss */
+.banner{
+  height: 230rpx;
+  padding-top: 80rpx;
+  text-align: center;
+}
+.banner text{
+  font-size: 150rpx;
+  color: white;
+}
+
+.code{
+  text-align: center;
+  font-size: 40rpx;
+  color: #444;
+}
+
+.info{
+  font-size: 50rpx;
+  color: #444;
+  margin: 40rpx;
+}
+
+.barcode{
+  margin-top: 100rpx;
+  margin-left: 50rpx;
+  margin-bottom: 30rpx;
+  width: 650rpx;
+  height: 220rpx;
+  
+}
+
+.qrcode{
+  width: 550rpx;
+  height: 550rpx;
+  margin-left: 80rpx;
+}

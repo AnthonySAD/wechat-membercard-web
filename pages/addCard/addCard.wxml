@@ -1,0 +1,29 @@
+<view class='banner' style='background-color:{{bgColor}}'>
+  <text class="iconfont icon-membership-card_icon"></text>
+</view>
+<view class='card-detail'>
+  <view class='card-detail-line' style='border-bottom:1px solid {{bgColor}}'>
+    <input placeholder='输入会员卡名称' bindinput='cardName' maxlength='12'></input>
+  </view>
+  <view class='card-detail-line' style='border-bottom:1px solid {{bgColor}}'>
+    <span class="iconfont icon-saoma scan-button" bindtap='scanCode'></span>
+    <input class='input-code' placeholder='扫码/输入卡号' bindinput='cardCode' maxlength='22' value="{{cardCode}}"></input>
+  </view>
+  <view class='card-detail-line card-detail-style' style='border-bottom:1px solid {{bgColor}}'>
+    <text>卡号显示方式:</text>
+    <radio-group bindchange='cardShowType'>
+      <radio checked="true" value="0">条形码</radio>
+      <radio value="1">二维码</radio>
+    </radio-group>
+  </view>
+  <view class='card-detail-line' style='border-bottom:1px solid {{bgColor}}'>
+    <input placeholder='输入备注信息' bindinput='cardInfo' maxlength='50'></input>
+  </view>
+  <view class='card-detail-line'>
+    <view style='color:{{bgColor}}'>卡片颜色</view>
+    <view class='card-detail-line-colors' data-color='{{item}}' wx:for="{{colorList}}" wx:key='item' style='background-color:{{item}}' bindtap='changeColor'></view>
+  </view>
+  <button class='card-save-button' style='background-color:{{bgColor}};color:white'bindtap='addCard'>
+    保 存
+  </button>
+</view>
