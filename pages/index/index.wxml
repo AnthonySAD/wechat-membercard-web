@@ -14,6 +14,20 @@
         <view class='card-right-name'>{{item.card_info.name}}</view>
         <view class='card-right-code'>{{item.card_info.code}}</view>
       </view>
+      <view class='iconfont icon-gengduo card-button-top' catchtap='showCardOptions' data-index='{{index}}'></view>
+      <view class='iconfont icon-fenxiang card-button-bottom' catchtap='showShareModal' data-index='{{index}}'></view>
   </view>
 </scroll-view> 
+<view class='card-share-modal-wrapper' hidden='{{hideShareModalWrapper}}'>
+  <view class='card-share-modal' hidden='{{hideShareModal}}'>
+    <view class='card-share-modal-content'>
+      <view class='card-share-modal-title'>确认分享会员卡</view>
+      <view class='card-share-modal-subtitle'>为了保证您的信息安全，分享链接有效期为7天，使用1次后失效</view>
+    </view>
+    <view class='card-share-modal-button-wrapper'>
+      <button class='card-share-modal-cancel' catchtap='hideShareModal'>取消</button>
+      <button class='card-share-modal-confirm' open-type='share'>确定</button>
+    </view>
+  </view>
+</view>
 

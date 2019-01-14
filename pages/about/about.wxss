@@ -1,6 +1,6 @@
 /* pages/about/about.wxss */
 .wrapper{
-  margin: 20rpx 30rpx;
+  height: 100%;
 }
 
 .title{
@@ -8,10 +8,32 @@
   font-size: 60rpx;
   padding-bottom: 40rpx;
 }
-
-.line{
-  margin-top: 20rpx;
+.line-wrapper{
+  border: 1px solid #ccc;
+  padding: 20rpx;
+  border-radius: 10rpx;
+  margin: 20rpx 30rpx;
+  background: #fafafa;
 }
+.small-font{
+  font-size: 30rpx;
+}
+.line{
+  margin: 10rpx 0;
+}
+
+.copy-button{
+  font-size: 26rpx;
+  background: #fcfcfc;
+  padding: 10rpx;
+  margin-left: 10rpx;
+  height: 100%;
+  width: 50rpx;
+  border: 1px solid #bbb;
+  border-radius: 10rpx;
+}
+
+
 
 .new{
   margin-left: 40rpx;

@@ -32,6 +32,7 @@ App({
   checkResult: function(res,callback){
     if (res.data.meta.code == 40102){
       this.login(callback)
+      return false
     }
     return true
   },

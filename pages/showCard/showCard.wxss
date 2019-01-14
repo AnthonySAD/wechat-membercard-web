@@ -18,7 +18,7 @@
 .info{
   font-size: 50rpx;
   color: #444;
-  margin: 40rpx;
+  margin: 30rpx 40rpx 60rpx;
 }
 
 .barcode{
@@ -34,4 +34,23 @@
   width: 550rpx;
   height: 550rpx;
   margin-left: 80rpx;
+}
+
+.button-wrapper{
+  display: flex;
+}
+
+.button-wrapper button{
+  flex: 1;
+  margin: 10rpx;
+}
+
+.button-dark{
+  background: #444;
+  color: #fff;
+}
+
+.button-bright{
+  background: rgb(240, 240, 0);
+  color: #444;
 }

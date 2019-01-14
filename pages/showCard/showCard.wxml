@@ -2,9 +2,13 @@
   <text class="iconfont icon-membership-card_icon"></text>
 </view>
 <canvas canvas-id='code-image' class="{{type == 1 ? 'qrcode' : 'barcode'}}"></canvas>
-<view class='code'>
+<!-- <view class='code'>
   {{code}}
+</view> -->
+<view class='info' hidden='{{info ? false : true}}'>
+ <text style='color:#999;font-size:40rpx'>备注:</text> {{info}}
 </view>
-<view class='info'>
-  {{info}}
-</view>
+<view class='button-wrapper'>
+  <button class='button-dark' bindtap='moreDark'>- 亮度</button>
+  <button class='button-bright' bindtap='moreBright'>+ 亮度</button>
+</view>  

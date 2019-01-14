@@ -1,36 +1,49 @@
 <!--pages/about/about.wxml-->
 <view class='wrapper'>
   <view class='title'>
-    会员卡包  V1.0.0
+    会员卡包  V1.1.1
   </view>
-  <view class='line'>
-    本小程序由个人开发，所以比较简陋。如果有任何建议，请发邮件至：
-  </view>
-  <view class='line'>
-    anthony_we_pro_1@163.com
-  </view>
-  <view class='line'>
-    即将更新以下新功能，敬请期待:
-  </view>
-  <view class='new'>
+  <view class='line-wrapper'>
     <view class='line'>
-      1. 增加编辑，删除会员卡功能
+      本小程序为个人开发，界面比较简陋，服务器也比较差，请大家见谅。如果有任何建议，请发邮件至：
     </view>
-    <view class='line'>
-      2. 增加把会员卡分享给好友功能
-    </view>
-    <view class='line'>
-      3. 增加可选的会员卡列表，方便添加会员卡
-    </view>
-    <view class='line'>
-      4. 可以把会员卡共享给所有人
-    </view>
-    <view class='line'>
-      5. 查看共享给所有人的会员卡
-    </view>
-    <view class='line'>
-      6. 美化分享功能
+    <view class='line small-font'>
+      anthony_we_pro_1@163.com
+      <text class='copy-button' data-value='anthony_we_pro_1@163.com' bindtap='copy'>点我复制</text>
     </view>
   </view>
+  <!-- <view class='line-wrapper'>
+    <view class='line'>
+      新功能正在赶来的路上，敬请期待...
+    </view>
+  </view> -->
+  <view class='line-wrapper'>
+    <view class='line'>
+      以下是源码地址，欢迎点赞:
+    </view>
+    <view class='line'>
+      前端：<text class='small-font'>https://github.com/AnthonySAD/wechat-membercard-web</text>
+      <text class='copy-button' data-value='https://github.com/AnthonySAD/wechat-membercard-web' bindtap='copy'>点我复制</text>
+    </view>
+    <view class='line'>
+      后端：<text class='small-font'>https://github.com/AnthonySAD/wechat-membercard-api</text>
+      <text class='copy-button' data-value='https://github.com/AnthonySAD/wechat-membercard-api' bindtap='copy'>点我复制</text>
+    </view>
+  </view>
+
+  <!-- <view class='new'>
+    <view class='line'>
+      1. 增加可选的会员卡列表，方便添加会员卡
+    </view>
+    <view class='line'>
+      2. 可以把会员卡共享给所有人
+    </view>
+    <view class='line'>
+      3. 查看共享给所有人的会员卡
+    </view>
+    <view class='line'>
+      4. 美化分享功能
+    </view>
+  </view> -->
   
 </view>
